@@ -37,29 +37,29 @@
 //*8. Müxtəlif növ səhvləri ayrıca idarə etmək üçün çoxsaylı CATCH bloklarının
 //* istifadəsini göstərən JavaScript proqramı yazın.
 
-function bolmeEmeliyyati(a, b) {
-  try {
-    // Əgər 'a' və 'b' ədəd deyil, və ya 'b' sıfıra bərabərdirsə, tip xətası TypeError yaradılır.
-    if (typeof a !== "number" || typeof b !== "number" || b === 0) {
-      throw new TypeError(
-        "Yanlış argumentlar. Ədəd olmalıdır və sıfıra bölünməməlidir."
-      );
-    }
-    // Əməliyyatda xəta yoxdursa, bölmə əməliyyatı aparılır.
-    const netice = a / b;
+// function bolmeEmeliyyati(a, b) {
+//   try {
+// Əgər 'a' və 'b' ədəd deyil, və ya 'b' sıfıra bərabərdirsə, tip xətası TypeError yaradılır.
+//     if (typeof a !== "number" || typeof b !== "number" || b === 0) {
+//       throw new TypeError(
+//         "Yanlış argumentlar. Ədəd olmalıdır və sıfıra bölünməməlidir."
+//       );
+//     }
+// Əməliyyatda xəta yoxdursa, bölmə əməliyyatı aparılır.
+//     const netice = a / b;
 
-    // Nəticə konsola yazdırılır.
-    console.log(netice);
-  } catch (error) {
-    // Əgər xəta baş veribsə, onu konsola yazdırıq.
-    console.log(error.message);
-  }
-}
+// Nəticə konsola yazdırılır.
+//     console.log(netice);
+//   } catch (error) {
+// Əgər xəta baş veribsə, onu konsola yazdırıq.
+//     console.log(error.message);
+//   }
+// }
 // 'a' 30 və 'b' "2" olsa da, tip xətası baş verir və nəticə konsola yazdırılmır.
-bolmeEmeliyyati(30, "2"); // Xəta: Yanlış argumentlar. Ədəd olmalıdır və sıfıra bölünməməlidir.
+// bolmeEmeliyyati(30, "2"); // Xəta: Yanlış argumentlar. Ədəd olmalıdır və sıfıra bölünməməlidir.
 
 // 'a' 30 və 'b' 10 olsa, əməliyyat uğurla aparılır və nəticə konsola yazdırılır.
-bolmeEmeliyyati(30, 10); // Nəticə: 3
+// bolmeEmeliyyati(30, 10); // Nəticə: 3
 
 // 'a' 30 və 'b' 0 olsa da, tip xətası baş verir və nəticə konsola yazdırılmır.
-bolmeEmeliyyati(30, 0); // Xəta: Yanlış argumentlar. Ədəd olmalıdır və sıfıra bölünməməlidir.
+// bolmeEmeliyyati(30, 0); // Xəta: Yanlış argumentlar. Ədəd olmalıdır və sıfıra bölünməməlidir.
